@@ -1,7 +1,7 @@
 {
-  "name": "falixnodes_gpu_miner",
-  "version": "2.0.0",
-  "description": "Mine FalixCoins using GPU.",
+  "name": "snaildos_gpu_miner",
+  "version": "1.0.0",
+  "description": "Mine SnailCoins using GPU.",
   "bin": "index.js",
   "main": "index.js",
   "scripts": {

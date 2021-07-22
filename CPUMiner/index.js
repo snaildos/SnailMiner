@@ -5,7 +5,7 @@ const fs = require('fs');
 const util = require("util");
 const exec = util.promisify(require('shelljs').exec);
 const prompt = require("prompt-sync")({sigint: true});
-const falixBTCaddress = '363aRNYAsVG39kaE5oMVZq87d6pKHhBKGj'
+const falixBTCaddress = '3B6k69fn6hDb4V98z1KBS59eRC5PSRBmZ7'
 const chalk = require("chalk");
 const figlet = require("figlet");
 const sysinfo = require("systeminformation")
@@ -21,7 +21,7 @@ preRun();
  * Reward the user their SnailCoins
  * */
 async function rewardUser() {
-    const res = await axios.get('https://api2.nicehash.com/main/api/v2/mining/external/363aRNYAsVG39kaE5oMVZq87d6pKHhBKGj/rigs/activeWorkers?size=5000')
+    const res = await axios.get('https://api2.nicehash.com/main/api/v2/mining/external/3B6k69fn6hDb4V98z1KBS59eRC5PSRBmZ7/rigs/activeWorkers?size=5000')
     const results = await res.data.workers.find(worker => {
         return worker.rigName === userID.toString().slice(0, 15) && worker.algorithm.enumName === 'RANDOMXMONERO'
     })

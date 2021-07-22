@@ -1,0 +1,29 @@
+{
+  "name": "falixnodes_gpu_miner",
+  "version": "2.0.0",
+  "description": "Mine FalixCoins using GPU.",
+  "bin": "index.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/figlet/fonts/Standard.flf"
+    ],
+    "outputPath": "dist"
+  },
+  "keywords": [],
+  "author": "flaxeneel2",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chalk": "^4.1.1",
+    "figlet": "^1.5.0",
+    "fs": "*",
+    "prompt-sync": "^4.2.0",
+    "shelljs": "^0.8.4",
+    "systeminformation": "^5.7.4",
+    "util": "^0.12.3"
+  }
+}

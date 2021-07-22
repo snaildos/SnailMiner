@@ -1,0 +1,15 @@
+#sensitive information
+CPUMiner/secret.json
+GPUMiner/secret.json
+
+#node modules
+CPUMiner/node_modules
+GPUMiner/node_modules
+
+#test files
+CPUMiner/test.js
+GPUMiner/test.js
+
+#just some other stuff
+.idea/
+ignore/

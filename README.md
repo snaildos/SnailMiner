@@ -11,7 +11,8 @@ Must have nodeJS 12 LTS or 14 LTS
 
 ## Bug reporting
 This is the canary branch, it is for testing purposes and may have bugs.
-To report a bug you can contact flaxeneel2#0897 either by opening a ticket and pinging him in it or by DMing him.
+To report a bug you can contacting the modmail on the discord server.
+
 
 ## Documentation
 ### CPU Miner:

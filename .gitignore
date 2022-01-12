@@ -13,3 +13,4 @@ GPUMiner/test.js
 #just some other stuff
 .idea/
 ignore/
+*.lock

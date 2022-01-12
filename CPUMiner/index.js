@@ -183,6 +183,7 @@ function wait(ms) {
     let osInfo = await sysinfo.osInfo()
     if(timings) console.log(chalk.bold(chalk.white(`OS info fetch timing: ${(Date.now() - time)/1000} second${(Date.now() - time)/1000 === 1 ? "" : "s"}`)))
     if (!cpuThreads) {
+        console.log("")
         console.log(chalk.red("Please specify the amount of CPU threads you would like to allocate to the miner"))
         cpuThreads = askNumber(chalk.gray("> "), 0, 33);
         console.log(chalk.yellow(`Okay! The miner will use ${cpuThreads} threads!`))

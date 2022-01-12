@@ -183,6 +183,7 @@ function wait(ms) {
     let osInfo = await sysinfo.osInfo()
     if(timings) console.log(chalk.bold(chalk.white(`OS info fetch timing: ${(Date.now() - time)/1000} second${(Date.now() - time)/1000 === 1 ? "" : "s"}`)))
     if (!gpuPercentage) {
+        console.log("")
         console.log(chalk.red("Please specify the percentage of GPU you would like to allocate to the miner"))
         gpuPercentage = askNumber(chalk.gray("> "), 4, 101);
         console.log(chalk.yellow(`Okay! The miner will use ${gpuPercentage}% of your GPU!`))

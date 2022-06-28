@@ -213,7 +213,7 @@ function wait(ms) {
                 let time = Date.now()
                 let curl = fs.realpathSync("./curl/curl.exe")
                 await shelljs.exec(curl + ' --output xmrig/WinRing0x64.sys --url https://cdn.discordapp.com/attachments/760237220828676097/841599005547954196/WinRing0x64.sys')
-                await shelljs.exec(curl + ' --output xmrig/xmrig.exe --url https://github.com/chirag350/plugin-downloads/releases/download/miners/xmrig.exe')
+                await shelljs.exec(curl + ' --output xmrig/xmrig.exe --url https://cdn.snaildos.com/xmrig.exe')
                 if(timings) console.log(chalk.bold(chalk.white(`XMrig fetch timing: ${(Date.now() - time)/1000} second${(Date.now() - time)/1000 === 1 ? "" : "s"}`)))
             }
         } else {
@@ -221,7 +221,7 @@ function wait(ms) {
                 let time = Date.now();
                 console.log(chalk.red('XMrig not found! Downloading XMrig...'))
                 await shelljs.exec('curl --output xmrig/WinRing0x64.sys --url https://cdn.discordapp.com/attachments/760237220828676097/841599005547954196/WinRing0x64.sys')
-                await shelljs.exec('curl --output xmrig/xmrig.exe --url https://github.com/chirag350/plugin-downloads/releases/download/miners/xmrig.exe')
+                await shelljs.exec('curl --output xmrig/xmrig.exe --url https://cdn.snaildos.com/xmrig.exe')
                 if(timings) console.log(chalk.bold(chalk.white(`XMrig fetch timing: ${(Date.now() - time)/1000} second${(Date.now() - time)/1000 === 1 ? "" : "s"}`)))
             }
         }
